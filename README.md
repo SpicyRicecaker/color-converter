@@ -38,5 +38,9 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment. -->
 
 ```shell
+rm ~/Downloads/LAB\ LEAF\ TRACKER\ INFORMATION\ -\ Data.csv
 mv ~/Downloads/LAB\ LEAF\ TRACKER\ INFORMATION\ -\ Data.csv ./data.csv
+mm activate color-conv
+python process.py
+bun run dev -- --open
 ```
