@@ -56,7 +56,6 @@ for i in range(1, 6):
     with open(input_path, 'rb') as file:
         my_var.load_var_file(file)
 
-
         row = str(my_var.entries[0])[1:-1].split(', ')
         row = list(map(lambda s : float(s) if i in [1, 2, 3] else int(s), row)) 
         # print(numbers)

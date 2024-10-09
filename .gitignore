@@ -23,3 +23,5 @@ vite.config.ts.timestamp-*
 # bun
 /bun.lockb
 *.csv
+
+__pycache__

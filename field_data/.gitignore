@@ -1,2 +1,4 @@
 /8xl_files
 *.csv
+/credentials.json
+/token.json

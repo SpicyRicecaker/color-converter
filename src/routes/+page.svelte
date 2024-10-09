@@ -39,7 +39,7 @@
 	<div class="col-span-2 grid grid-rows-2 h-full">
 		<!-- front face colors -->
 		<div class="h-full">
-			<div class="grid grid-cols-8 *:aspect-square overflow-scroll">
+			<div class="grid grid-cols-8 *:aspect-square overflow-auto">
 				{#each selectedTypeData['f'] as datum}
 					<div
 						style={`background-color: ${lab_hexrgb([datum['l'], datum['a'], datum['b']])}`}
@@ -50,7 +50,7 @@
 
 		<!-- bace face colors -->
 		<div class="h-full">
-			<div class="grid grid-cols-8 *:aspect-square overflow-scroll">
+			<div class="grid grid-cols-8 *:aspect-square overflow-auto">
 				{#each selectedTypeData['b'] as datum}
 					<div
 						style={`background-color: ${lab_hexrgb([datum['l'], datum['a'], datum['b']])}`}
