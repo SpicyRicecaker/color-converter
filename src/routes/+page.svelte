@@ -26,8 +26,9 @@
 <div class="grid grid-cols-3 h-full">
 	<div class="h-full">
 		{#each types as type}
-			<div>
+			<div class="m-2">
 				<a
+					class="hover:font-bold"
 					href="#"
 					onclick={() => {
 						selectedType = type
@@ -42,8 +43,14 @@
 			<div class="grid grid-cols-8 *:aspect-square overflow-auto">
 				{#each selectedTypeData['f'] as datum}
 					<div
+						class="group p-2"
 						style={`background-color: ${lab_hexrgb([datum['l'], datum['a'], datum['b']])}`}
-					></div>
+					>
+						<div class="group-hover:block hidden">{datum['date']}</div>
+						<div class="group-hover:block hidden">L: {Math.round(datum['l'] * 1000) / 1000}</div>
+						<div class="group-hover:block hidden">A: {Math.round(datum['a'] * 1000) / 1000}</div>
+						<div class="group-hover:block hidden">B: {Math.round(datum['b'] * 1000) / 1000}</div>
+					</div>
 				{/each}
 			</div>
 		</div>
@@ -53,8 +60,14 @@
 			<div class="grid grid-cols-8 *:aspect-square overflow-auto">
 				{#each selectedTypeData['b'] as datum}
 					<div
+						class="group p-2"
 						style={`background-color: ${lab_hexrgb([datum['l'], datum['a'], datum['b']])}`}
-					></div>
+					>
+						<div class="group-hover:block hidden">{datum['date']}</div>
+						<div class="group-hover:block hidden">L: {Math.round(datum['l'] * 1000) / 1000}</div>
+						<div class="group-hover:block hidden">A: {Math.round(datum['a'] * 1000) / 1000}</div>
+						<div class="group-hover:block hidden">B: {Math.round(datum['b'] * 1000) / 1000}</div>
+					</div>
 				{/each}
 			</div>
 		</div>

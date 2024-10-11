@@ -48,6 +48,8 @@ def conv(A):
             prev = A[i]
     return A
 
+total_data_len = None
+
 for i in range(1, 6):
     # Path to your .8xl file
     input_path = f"./8xl_files/L{i}.8xl"
@@ -57,6 +59,17 @@ for i in range(1, 6):
         my_var.load_var_file(file)
 
         row = str(my_var.entries[0])[1:-1].split(', ')
+        if i == 1:
+            total_data_len = len(row)
+        else:
+            # say total_data_len is 10
+            # len of row is 5
+            # then we want only :5
+
+            # say total_data_len is 5
+            # len of row is 10
+            # then we still only want :5
+            row = row[:min(len(row), total_data_len)]
         row = list(map(lambda s : float(s) if i in [1, 2, 3] else int(s), row)) 
         # print(numbers)
         if column_name[i] == 'Type':
