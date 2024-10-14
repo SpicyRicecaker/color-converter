@@ -72,7 +72,7 @@ function rgb_to_hex_string([r, g, b]) {
 }
 
 export function lab_hexrgb(lab) {
-    console.log(rgb_to_hex_string(lab_rgb(lab)))
+    // console.log(rgb_to_hex_string(lab_rgb(lab)))
     return rgb_to_hex_string(lab_rgb(lab))
     // return "#FF0000"
 }
