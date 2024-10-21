@@ -37,21 +37,21 @@ def main():
             r["Face"],
         ]
 
-        # print(
-        #     "\t\t".join(
-        #         map(
-        #             lambda x: f"\"{str(x)}\"",
-        #             [
-        #                 r["Date"],
-        #                 r["L"],
-        #                 r["A"],
-        #                 r["B"],
-        #                 r["Type"],
-        #                 r["Face"],
-        #             ],
-        #         )
-        #     )
-        # )
+        print(
+            "\t\t".join(
+                map(
+                    lambda x: f"\"{str(x)}\"",
+                    [
+                        r["Date"],
+                        r["L"],
+                        r["A"],
+                        r["B"],
+                        r["Type"],
+                        r["Face"],
+                    ],
+                )
+            )
+        )
 
         # if we have a new face
         #   do not add or change any values
