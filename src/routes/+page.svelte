@@ -16,7 +16,8 @@
 		'jp maple 2': { f: [], b: [] },
 		'bonfire sugar maple 2': { f: [], b: [] },
 		'tulip tree 2': { f: [], b: [] },
-		'american elm 2': { f: [], b: [] }
+		'american elm 2': { f: [], b: [] },
+		'red maple 2': { f: [], b: [] }
 	})
 
 	const types = ['red maple', 'jp maple', 'american elm', 'quaking aspen', 'tulip tree']
